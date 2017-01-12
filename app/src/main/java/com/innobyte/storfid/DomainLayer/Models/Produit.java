@@ -34,6 +34,27 @@ public class Produit extends RealmObject {
     private int QtsStock;
     private int QtsReorder;
     private String description;
+    private Zone zone;
+    private Site site;
+
+
+
+
+    public Zone getZone() {
+        return zone;
+    }
+
+    public void setZone(Zone zone) {
+        this.zone = zone;
+    }
+
+    public Site getSite() {
+        return site;
+    }
+
+    public void setSite(Site site) {
+        this.site = site;
+    }
 
     private RealmList<Caracteristique> caracteristiques;
     private int ratings; // rating from 0 to 10
